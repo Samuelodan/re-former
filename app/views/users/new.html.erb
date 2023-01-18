@@ -1,22 +1,22 @@
 <%= form_with model: @user do |form| %>
   <% @user.errors.full_messages.each do |message| %>
     <div><%= message %></div>
-  <% end %>
+  <% end %> <br>
 
   <div>
     <%= form.label :username, "Your username" %>
     <%= form.text_field :username %>
-  </div>
+  </div> <br>
 
   <div>
     <%= form.label :email %>
     <%= form.email_field :email, placeholder: "example@example.com" %>
-  </div>
+  </div> <br>
 
   <div>
     <%= form.label :password %>
     <%= form.password_field :password %>
-  </div>
+  </div> <br>
 
   <div>
     <%= form.submit %>
